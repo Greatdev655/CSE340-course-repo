@@ -91,6 +91,26 @@ main {
   color: #ffffff;
 }
 
+/* organization list */
+
+.organization-list {
+  list-style-type: none;
+  padding: 0;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  margin: 0 auto;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+
+
+.organization-list li {
+  margin-bottom: 1rem;
+}
+
 /* footer */
 
 footer {
