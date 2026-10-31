@@ -1,26 +1,29 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="../../public/nav.js" type="module"></script>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="logo-container">
-        <img
-          class="main-logo"
-          src="images/cse340-service-network.svg"
-          alt="CSE 340 Service Network Logo"
-        />
-      </div>
-      <ul>
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/organizations" class="nav-link">Organizations</a></li>
-        <li><a href="/projects" class="nav-link">Projects</a></li>
-        <li><a href="/categories" class="nav-link">Categories</a></li>
-      </ul>
-    </nav>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <script src="../../public/nav.js" type="module"></script>
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="logo-container">
+      <a href="/">
+        <img class="main-logo" src="images/cse340-service-network.svg" alt="CSE 340 Service Network Logo" />
+      </a>
+    </div>
+    <ul>
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/organizations" class="nav-link">Organizations</a></li>
+      <li><a href="/projects" class="nav-link">Projects</a></li>
+      <li><a href="/categories" class="nav-link">Categories</a></li>
+    </ul>
+  </nav>
+</body>
+
 </html>
