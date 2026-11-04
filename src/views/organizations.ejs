@@ -10,7 +10,7 @@
     <%- include('partials/header') %>
     <main>
       <h1 class="title"><%= title %></h1>
-      <ul class="organization-list">
+      <!-- <ul class="organization-list">
         <li>
           <img
             src="/images/brightfuture-logo.png"
@@ -29,7 +29,16 @@
             alt="UnityServe Volunteers logo"
           /> <div class="organization-image-label"><strong>UnityServe Volunteers</strong><br> hello@unityserve.org</div>
         </li>
-      </ul>
+      </ul> -->
+
+      <div class="organization-list">
+       <ul class="organization-list">
+
+            <% organizations.forEach(organization => { %>
+                <li><img src="/images/<%= organization.logo_filename %>" alt="<%= organization.organization_name %> logo"><strong><%= organization.organization_name %></strong>: <%= organization.organization_email %></li>
+            <% }); %>
+        </ul>
+      </div>
     </main>
     <%- include('partials/footer') %>
   </body>
