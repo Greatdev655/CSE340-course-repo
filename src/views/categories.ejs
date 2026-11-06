@@ -15,12 +15,18 @@
       <h2 class="category-header">Categories</h2>
       <p class="category-text">Explore the different categories of service opportunities available in your community.</p>
 
-      <ul class="categories-list">
+      <!-- <ul class="categories-list">
         <li>Environmental</li>
         <li>Educational</li>
         <li>Community Service</li>
         <li>Health and Wellness</li>
         
+      </ul> -->
+
+      <ul class="categories-list">
+        <% categories.forEach(category => { %>
+          <li><%= category.category_name %></li>
+        <% }); %>
       </ul>
 
     </main> 
