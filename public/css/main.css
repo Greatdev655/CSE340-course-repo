@@ -26,6 +26,11 @@ main {
   flex: 1;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
