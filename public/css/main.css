@@ -220,6 +220,15 @@ a{
   margin-bottom: 18px;
 }
 
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.tag {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    text-decoration: none;
+}
+.tag:hover, .tag:focus { text-decoration: underline; }
+
 /* footer */
 
 footer {
@@ -260,6 +269,8 @@ footer {
     }
 
 }
+
+
 
 
 /* =========================================
