@@ -24,6 +24,19 @@
       <li><a href="/categories" class="nav-link">Categories</a></li>
     </ul>
   </nav>
+
+
+
+  <% const messages = flash(); %>
+    <% Object.keys(messages).forEach(type => { %>
+        <% if (messages[type].length > 0) { %>
+            <div class="alert <%= type %>">
+                <% messages[type].forEach(msg => { %>
+                    <p><%= msg %></p>
+                <% }); %>
+            </div>
+        <% } %>
+    <% }); %>
 </body>
 
 </html>
